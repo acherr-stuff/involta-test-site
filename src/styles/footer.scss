@@ -1,0 +1,280 @@
+$footer-logo-width: 145px;
+footer {
+  padding-top: 80px;
+  width: 100%;
+  margin: 0% auto;
+  flex: 0 0 auto;
+  position: relative;
+  box-sizing: inherit;
+  .footer-top-block {
+    border-top: 1px solid #2b2b2b;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    @include phone {
+      padding-bottom: 30px;
+    }
+    overflow: hidden;
+    .columns {
+      margin-left: -10px;
+      margin-right: -10px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 65%;
+      @include computer {
+        width: 63%;
+      }
+      @include laptop {
+        width: 59%;
+      }
+      @include tablet {
+        width: 73%;
+      }
+      @include phone {
+        width: 100%;
+      }
+      float: left;
+      height: auto;
+      .column {
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: inherit;
+      }
+      .col-4 {
+        width: 31%;
+        @include computer {
+          width: calc(31% - 5px);
+        }
+        @include laptop {
+          width: 28%;
+        }
+        @include tablet {
+          width: calc(30% - 5px);
+        }
+        @include phone {
+          width: 100%;
+        }
+      }
+    }
+
+    .footer-top-block__logo {
+      width: 100%;
+      max-width: 17.5%;
+      height: inherit;
+      flex-shrink: 0;
+      padding: 0 10px;
+      float: left;
+      @include tablet {
+        display: none;
+      }
+      @include phone {
+        display: none;
+      }
+    }
+    .footer-top-block__logo__img {
+      background-image: url(../assets/images/logo2.svg);
+      height: 106px;
+      width: $footer-logo-width;
+    }
+    h4 {
+      margin: 0;
+      padding: 0;
+      font-family: Circe;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 29px;
+      color: #2b2b2b;
+      @include phone {
+        margin-top: 10px;
+      }
+    }
+    .footer-top__menu {
+      overflow: hidden;
+      width: 100%;
+      padding: 0 10px;
+      box-sizing: inherit;
+      float: left;
+    }
+    .footer-top-menu__item {
+      @include phone {
+        padding-left: 20px;
+        text-align: center;
+        flex-wrap: nowrap;
+      }
+
+      @include tablet {
+        padding-left: 20px;
+        text-align: center;
+      }
+      flex-wrap: wrap;
+      box-sizing: inherit;
+    }
+  }
+}
+ul.footer-menu {
+  padding: 0;
+  @include phone {
+    width: 100%;
+  }
+  @include computer {
+  }
+  margin: 5px 0;
+  flex-wrap: wrap;
+  box-sizing: inherit;
+  &.xl {
+    @include large {
+      display: flex;
+    }
+    li {
+      @include computer {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      list-style-type: none;
+      font-weight: 300;
+      font-family: Circe;
+      font-style: normal;
+      font-weight: 100;
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 10px;
+      color: #2b2b2b;
+      margin-bottom: 0;
+      @include large {
+        width: 50%;
+      }
+    }
+  }
+}
+.footer-top-contacts {
+  width: 100%;
+  max-width: 15%;
+  @include computer {
+    max-width: 17%;
+  }
+  @include laptop {
+    max-width: 21%;
+  }
+  @include tablet {
+    max-width: 27%;
+  }
+  @include phone {
+    max-width: 100%;
+    text-align: center;
+  }
+  flex-shrink: 0;
+  padding: 0 10px;
+  float: right;
+  ul.contacts {
+    padding: 0;
+    margin: 5px 0;
+    li {
+      list-style-type: none;
+      font-family: Circe;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 19px;
+      color: #2b2b2b;
+      margin-bottom: 15px;
+    }
+    span {
+      display: block;
+    }
+    a {
+      font-family: Circe;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 38px;
+      text-decoration: none;
+      color: #2b2b2b;
+    }
+  }
+}
+.footer-bottom-block {
+  height: 44px;
+  border-top: 1px dashed #707070;
+  padding: 30px 0;
+  .footer-bottom-block__description {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #2b2b2b;
+    display: inline-block;
+    float: left;
+    @include phone {
+      display: none;
+    }
+    @include laptop {
+      width: 40%;
+    }
+    @include tablet {
+      width: 38%;
+    }
+    width: 34%;
+  }
+  .footer-bottom-block__icons {
+    float: left;
+    position: absolute;
+    left: 50%;
+    display: inline-block;
+    width: 13%;
+    @include phone {
+      width: 136px;
+      left: 38.5%;
+      float: none;
+    }
+    @include tablet {
+      width: 18%;
+      left: 45%;
+    }
+    
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+        list-style-type: none;
+        .vk-icon {
+          background-image: url(../assets/images/vk_red.svg);
+          height: 17px;
+          width: 30px;
+          display: inline-block;
+          margin-right: 30px;
+        }
+        .inst-icon {
+          background-image: url(../assets/images/insta_red.svg);
+          height: 20px;
+          width: 20px;
+          display: inline-block;
+          margin-right: 30px;
+        }
+        .ok-icon {
+          background-image: url(../assets/images/ok_red.svg);
+          height: 22px;
+          width: 15px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .footer-bottom-block__address {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #2b2b2b;
+    float: right;
+    @include phone {
+      display: none;
+    }
+
+    width: 44%;
+    display: inline-block;
+    text-align: right;
+  }
+}

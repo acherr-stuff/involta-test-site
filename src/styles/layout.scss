@@ -1,0 +1,165 @@
+$container-width: 1360px;
+$computer-width: 1200px;
+$laptop-width: 1024px;
+$tablet-width: 768px;
+$phone-width: 600px;
+
+.container {
+  width: 1360px;
+  @include computer {
+    width: $computer-width;
+    padding-left: 10px;
+    padding-right: 30px;
+  }
+  @include laptop {
+    width: $laptop-width;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @include tablet {
+    width: $tablet-width;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @include phone {
+    width: 80%;
+    min-width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  margin: 0% auto;
+  header {
+    height: 112px;
+    padding-right: 0;
+    .header__logo {
+      background-image: url(../assets/images/logo1.svg);
+      margin-top: 22px;
+      height: 69px;
+      width: 94px;
+      float: left;
+    }
+    .header__menu {
+      margin-left: 14%;
+      @include computer {
+        margin-left: 5%;
+      }
+      @include laptop {
+        display: none;
+      }
+      @include tablet {
+        display: none;
+      }
+      @include phone {
+        display: none;
+      }
+      float: left;
+      margin-top: 20px;
+
+      ul {
+        padding-left: 0;
+        // margin-left: 190px;
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+          display: flex;
+          flex-wrap: wrap;
+          // display: inline-block;
+          list-style-type: none;
+          // margin-top: 43px;
+          a {
+            text-decoration: none;
+            font-size: 20px;
+            font-family: Circe;
+            color: #2b2b2b;
+            line-height: 29px;
+            text-transform: uppercase;
+            margin-right: 60px;
+
+            .lounge-icon {
+              background-image: url(../assets/images/lounge.svg);
+              height: 14px;
+              width: 15px;
+              display: inline-block;
+              margin-right: 5px;
+            }
+            .kitchen-icon {
+              background-image: url(../assets/images/kitchen.svg);
+              height: 14px;
+              width: 15px;
+              display: inline-block;
+              margin-right: 5px;
+            }
+            .playroom-icon {
+              background-image: url(../assets/images/playroom.svg);
+              height: 14px;
+              width: 16px;
+              display: inline-block;
+              margin-right: 5px;
+            }
+            .bathroom-icon {
+              background-image: url(../assets/images/bathroom.svg);
+              height: 16px;
+              width: 17px;
+              display: inline-block;
+              margin-right: 5px;
+            }
+            .bedroom-icon {
+              background-image: url(../assets/images/bedroom.svg);
+              height: 15px;
+              width: 18px;
+              display: inline-block;
+              margin-right: 5px;
+            }
+          }
+          a:hover {
+            background-color: transparent;
+          }
+          li:hover {
+            background-color: #fff;
+          }
+        }
+        //           li:hover {
+
+        //    color: #fff;
+        //    background-color: #2B2B2B;
+        //  }
+      }
+    }
+    .header__icons {
+      float: right;
+      margin-top: 20px;
+      margin-right: 0;
+      ul {
+        li {
+          display: inline-block;
+          list-style-type: none;
+          .search-icon {
+            background-image: url(../assets/images/search.svg);
+            height: 20px;
+            width: 18px;
+            display: inline-block;
+            // margin-left: 40px;
+            background-repeat: no-repeat;
+          }
+          .heart-icon {
+            background-image: url(../assets/images/heart.svg);
+            height: 18px;
+            width: 22px;
+            display: inline-block;
+            margin-left: 40px;
+            background-repeat: no-repeat;
+          }
+          .menu-icon {
+            background-image: url(../assets/images/menu.svg);
+            height: 15px;
+            width: 22px;
+            display: inline-block;
+            margin-left: 40px;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+  }
+}

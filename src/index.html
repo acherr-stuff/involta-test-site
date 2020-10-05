@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интернет-магазин</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__logo"></div>
+        <nav class="header__menu">
+          <ul>
+            <li>
+              <a href="#"><i class="lounge-icon"></i>Гостиная</a>
+            </li>
+            <li>
+              <a href="#"><i class="kitchen-icon"></i>Кухня</a>
+            </li>
+            <li>
+              <a href="#"><i class="playroom-icon"></i>Детская</a>
+            </li>
+            <li>
+              <a href="#"><i class="bathroom-icon"></i>Ванная</a>
+            </li>
+            <li>
+              <a href="#"><i class="bedroom-icon"></i>Спальня</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__icons">
+          <ul>
+            <li>
+              <a href="#"><i class="search-icon"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="heart-icon"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="menu-icon"></i></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="content">
+        <aside id="filters">
+          <p>Все товары</p>
+          <div class="filter-block">
+            <div class="filter-block__title">
+              <h3>Вид ткани</h3>
+            </div>
+            <div class="filter-block__selector">
+              <ul>
+                <li>
+                  <input type="checkbox" id="byaz" /><label for="byaz"
+                    >Бязь</label
+                  ><span class="count">3</span>
+                </li>
+                <li>
+                  <input type="checkbox" id="satyn" /><label for="satyn"
+                    >Сатин</label
+                  ><span class="count">3</span>
+                </li>
+                <li>
+                  <input type="checkbox" id="poplyn" /><label for="poplyn"
+                    >Поплин</label
+                  ><span class="count">3</span>
+                </li>
+                <li>
+                  <input type="checkbox" id="runfors" /><label for="runfors"
+                    >Ранфорс</label
+                  ><span class="count">3</span>
+                </li>
+                <li>
+                  <input type="checkbox" id="perkal" /><label for="perkal"
+                    >Перкаль</label
+                  ><span class="count">3</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="filter-block">
+            <div class="filter-block__title">
+              <h3>Размер</h3>
+            </div>
+            <div class="filter-block__selector">
+              <ul>
+                <li>
+                  <input type="checkbox" id="1,5" /><label for="1,5"
+                    >1,5 сп</label
+                  ><span class="count">3</span>
+                </li>
+                <li>
+                  <input type="checkbox" id="2" /><label for="2">2 сп</label
+                  ><span class="count">3</span>
+                </li>
+                <li>
+                  <input type="checkbox" id="euro" /><label for="euro"
+                    >Евро</label
+                  ><span class="count">3</span>
+                </li>
+                <li>
+                  <input type="checkbox" id="family" /><label for="family"
+                    >Семейный</label
+                  ><span class="count">3</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="filter-block">
+            <div class="filter-block__title">
+              <h3>Дизайн</h3>
+            </div>
+            <div class="filter-block__selector">
+              <ul>
+                <li>
+                  <input type="checkbox" id="flowers" /><label for="flowers"
+                    >Цветы</label
+                  ><span class="count">3</span>
+                </li>
+                <li>
+                  <input type="checkbox" id="geom" /><label for="geom"
+                    >Геометрия</label
+                  ><span class="count">3</span>
+                </li>
+                <li>
+                  <input type="checkbox" id="abstr" /><label for="abstr"
+                    >Абстракция</label
+                  ><span class="count">3</span>
+                </li>
+                <li>
+                  <input type="checkbox" id="animal" /><label for="animal"
+                    >Animal</label
+                  ><span class="count">3</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="filter-block">
+            <div class="filter-block__title">
+              <h3>Тип</h3>
+            </div>
+            <div class="filter-block__selector">
+              <ul>
+                <li>
+                  <input type="checkbox" id="complect" /><label for="complect"
+                    >Комплект</label
+                  ><span class="count">3</span>
+                </li>
+                <li>
+                  <input type="checkbox" id="cover" /><label for="cover"
+                    >Пододеяльник</label
+                  ><span class="count">3</span>
+                </li>
+                <li>
+                  <input type="checkbox" id="sheet" /><label for="sheet"
+                    >Простыня</label
+                  ><span class="count">3</span>
+                </li>
+                <li>
+                  <input type="checkbox" id="pillowcase" /><label
+                    for="pillowcase"
+                    >Комплект наволочек</label
+                  ><span class="count">3</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="filter-block color">
+            <div class="filter-block__title">
+              <h3>Цвет</h3>
+            </div>
+            <div class="filter-block__selector">
+              <ul>
+                <li class="white">
+                  <input type="checkbox" id="white" /><label
+                    for="white"
+                    class="label-color-white"
+                    >Белый</label
+                  ><span class="count">3</span>
+                </li>
+                <li class="peach">
+                  <input type="checkbox" id="peach" /><label for="peach"
+                    >Персиковый</label
+                  ><span class="count">3</span>
+                </li>
+                <li class="sheet1">
+                  <input type="checkbox" id="sheet1" /><label for="sheet1"
+                    >Простыня</label
+                  ><span class="count">3</span>
+                </li>
+                <li class="yellow">
+                  <input type="checkbox" id="yellow" /><label for="yellow"
+                    >Желтый</label
+                  ><span class="count">3</span>
+                </li>
+                <li class="whitehover">
+                  <input type="checkbox" id="whitehover" /><label
+                    for="whitehover"
+                    >Белый ховер</label
+                  ><span class="count">3</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+        <main>
+          <div class="open-filters"><button id="open-filters">Фильтры</button></div>
+          <section class="breadcrumbs">
+            <ul>
+              <li class="breadcrumbs__previous"><a href="#">Главная</a></li>
+              <li class="breadcrumbs__previous"><a href="#">Каталог</a></li>
+              <li class="breadcrumbs__previous"><a href="#">Спальня</a></li>
+              <li class="breadcrumbs__current">Постельное бельё</li>
+            </ul>
+          </section>          
+          <article class="main-content-description">
+            <div class="main-content-description__title">
+              <h1>Постельное бельё</h1>
+              <div class="icon"><i class="bedroom-icon"></i></div>
+            </div>
+            <div class="main-content-description__content">
+              <p>
+                Правомочен микрохроматический интервал традиционно
+                трансформирует комплексный голос, что несомненно приведет нас к
+                истине вектор переворачивает аккорд. Скачок функции, как бы это
+                ни казалось парадоксальным, начинает голос наибольшее и
+                наименьшее значения функции вызывает ряд тейлора. Сумма ряда
+                концентрирует миксолидийский нонаккорд, что и требовалось
+                доказать.
+              </p>
+            </div>
+          </article>
+          <section id="list">
+            <div class="list-filters">
+              <button>По популярности</button>
+              <button>Материал</button>
+              <button>Размер</button>
+              <div class="count">1 120 товаров</div>
+            </div>
+            <div class="list-grid-wrapper">
+              <div class="list-grid">
+                <div class="list-grid__item">
+                  <div class="list-grid__item__image">
+                    <img
+                      src="<%=require('./assets/images/image1.png').default%>"
+                    />
+                    <a class="button-like"></a>
+                  </div>
+                  <div class="list-grid__item__description">
+                    <a href="#">КПБ «Мальва»</a>  <span>Рис. 5676</span>
+                  </div>
+                </div>
+                <div class="list-grid__item">
+                  <div class="list-grid__item__image">
+                    <img
+                      src="<%=require('./assets/images/image1.png').default%>"
+                    />
+                  </div>
+                  <div class="list-grid__item__description">
+                     <a href="#">КПБ «Мальва»</a> <span>Рис. 5676</span>
+                  </div>
+                </div>
+                <div class="list-grid__item">
+                  <div class="list-grid__item__image">
+                    <img
+                      src="<%=require('./assets/images/image1.png').default%>"
+                    />
+                  </div>
+                  <div class="list-grid__item__description">
+                     <a href="#">КПБ «Мальва»</a> <span>Рис. 5676</span>
+                  </div>
+                </div>
+                <div class="list-grid__item">
+                  <div class="list-grid__item__image">
+                    <img
+                      src="<%=require('./assets/images/image1.png').default%>"
+                    />
+                  </div>
+                  <div class="list-grid__item__description">
+                     <a href="#">КПБ «Мальва»</a> <span>Рис. 5676</span>
+                  </div>
+                </div>
+                <div class="list-grid__item">
+                  <div class="list-grid__item__image">
+                    <img
+                      src="<%=require('./assets/images/image1.png').default%>"
+                    />
+                  </div>
+                  <div class="list-grid__item__description">
+                     <a href="#">КПБ «Мальва»</a> <span>Рис. 5676</span>
+                  </div>
+                </div>
+                <div class="list-grid__item">
+                 <div class="list-grid__item__image">
+                    <img
+                      src="<%=require('./assets/images/image1.png').default%>"
+                    />
+                  </div>
+                  <div class="list-grid__item__description">
+                     <a href="#">КПБ «Мальва»</a> <span>Рис. 5676</span>
+                  </div>
+                </div>
+                                <div class="list-grid__item">
+                  <div class="list-grid__item__image">
+                    <img
+                      src="<%=require('./assets/images/image1.png').default%>"
+                    />
+                  </div>
+                  <div class="list-grid__item__description">
+                     <a href="#">КПБ «Мальва»</a> <span>Рис. 5676</span>
+                  </div>
+                </div>
+                <div class="list-grid__item">
+                  <div class="list-grid__item__image">
+                    <img
+                      src="<%=require('./assets/images/image1.png').default%>"
+                    />
+                  </div>
+                  <div class="list-grid__item__description">
+                     <a href="#">КПБ «Мальва»</a> <span>Рис. 5676</span>
+                  </div>
+                </div>
+                <div class="list-grid__item">
+                  <div class="list-grid__item__image">
+                    <img
+                      src="<%=require('./assets/images/image1.png').default%>"
+                    />
+                  </div>
+                  <div class="list-grid__item__description">
+                     <a href="#">КПБ «Мальва»</a> <span>Рис. 5676</span>
+                  </div>
+                </div>
+                <div class="list-grid__item">
+                  <div class="list-grid__item__image">
+                    <img
+                      src="<%=require('./assets/images/image1.png').default%>"
+                    />
+                  </div>
+                  <div class="list-grid__item__description">
+                     <a href="#">КПБ «Мальва»</a> <span>Рис. 5676</span>
+                  </div>
+                </div>
+                <div class="list-grid__item">
+                  <div class="list-grid__item__image">
+                    <img
+                      src="<%=require('./assets/images/image1.png').default%>"
+                    />
+                  </div>
+                  <div class="list-grid__item__description">
+                     <a href="#">КПБ «Мальва»</a> <span>Рис. 5676</span>
+                  </div>
+                </div>
+                <div class="list-grid__item"><div class="list-grid__item__image">
+                    <img
+                      src="<%=require('./assets/images/image1.png').default%>"
+                    />
+                  </div>
+                  <div class="list-grid__item__description">
+                    <a href="#">КПБ «Мальва»</a> <span>Рис. 5676</span>
+                  </div></div> 
+                
+                </div>
+                
+              </div>
+             <ul class="list-pagination">
+               <li class="pagination-button-back"> <span><a href="#">Назад</a></span> </li>
+               <li class="pagination-item"><a href="#">1</a> </li>
+               <li class="pagination-item"><span><a href="#">2</a></span> </li>
+               <li class="pagination-item"><span><a href="#">3</a></span></li>
+               <li class="pagination-item"><span><a href="#">4</a></span> </li>
+               <li class="pagination-item"><span><a href="#">5</a></span> </li>
+               <li class="pagination-item"><span><a href="#">6</a></span> </li>
+               <li class="pagination-item"><span><a href="#">7</a></span> </li>
+               <li class="pagination-item"><span><a href="#">8</a></span> </li>
+               <li class="pagination-button-forward"> <span><a href="#">Вперед</a></span>  </li>
+              <li class="pagination-item show-more"><span><a href="#">Показать ещё</a></span> </li>
+                           </ul>
+            </div>
+           
+            <article class="content-description">
+              <h3>СЕО-заголовок</h3>
+              <p>Правомочен микрохроматический интервал традиционно трансформирует комплексный голос, что несомненно приведет нас к истине вектор 
+переворачивает аккорд. Скачок функции, как бы это ни казалось парадоксальным, начинает голос наибольшее и наименьшее значения функции 
+вызывает ряд тейлора. Сумма ряда концентрирует миксолидийский нонаккорд, что и требовалось доказать.</p>
+            </article>
+            <article class="content-description">
+               <h3>Доставка товара</h3>
+              <p>Правомочен микрохроматический интервал традиционно трансформирует комплексный голос, что несомненно приведет нас к истине вектор 
+переворачивает аккорд. Скачок функции, как бы это ни казалось парадоксальным, начинает голос наибольшее и наименьшее значения функции 
+вызывает ряд тейлора. Сумма ряда концентрирует миксолидийский нонаккорд, что и требовалось доказать. Скачок функции, как бы это ни казалось 
+парадоксальным, начинает голос наибольшее и наименьшее значения функции  вызывает ряд тейлора. Сумма ряда концентрирует миксолидийский 
+нонаккорд, что и требовалось доказать.</p>
+            </article>
+            <article class="content-description">
+               <h3>Оплата товара</h3>
+              <p>Правомочен микрохроматический интервал традиционно трансформирует комплексный голос, что несомненно приведет нас к истине вектор 
+переворачивает аккорд. Скачок функции, как бы это ни казалось парадоксальным, начинает голос наибольшее и наименьшее значения функции 
+вызывает ряд тейлора. Сумма ряда концентрирует миксолидийский нонаккорд, что и требовалось доказать. Скачок функции, как бы это ни казалось 
+парадоксальным, начинает голос наибольшее и наименьшее значения функции  вызывает ряд тейлора. Сумма ряда концентрирует миксолидийский 
+нонаккорд, что и требовалось доказать.</p>
+            </article>
+          </section>
+        </main>
+            <footer class="footer">
+        <div class="footer-top-block">
+          <div class="footer-top-block__logo"><div class="footer-top-block__logo__img"></div></div>
+          
+          <div class="footer-top-menu">
+          <div class="columns">
+          <div class="column col-4">
+          <div class="footer-top-menu__item">
+            <h4>О компании</h4>
+            <ul class="footer-menu xl">
+              <li>О компании</li>
+              <li>Новости</li>
+              <li>Акции и скидки</li>
+              <li>Гарантии</li>
+              <li>Розничная сеть</li>
+              <li>О бренде</li>
+              <li>Отзывы</li>
+              <li>Контакты</li>
+            </ul>
+          </div>
+          </div> 
+
+          <div class="column col-4 ">
+          <div class="footer-top-menu__item">
+            <h4>Помощь</h4>
+            <ul class="footer-menu xl">
+              <li>Избранное</li>
+              <li>Личный кабинет</li>
+              <li>FAQ</li>
+              <li>Оптовикам</li>
+              <li>Партнеры</li>
+              <li>Как купить</li>
+              <li>Доставка и оплата</li>
+              <li>Условия покупки</li>
+            </ul>
+          </div>
+          </div>
+          
+          <div class="column col-4">
+          <div class="footer-top-menu__item">
+            <h4>Каталог</h4>
+            <ul class="footer-menu xl">
+              <li>Гостиная</li>
+              <li>Кухня</li>
+              <li>Детская</li>
+              <li>Ванная</li>
+              <li>Спальня</li>
+              <li>Новинки</li>
+              <li>Lookbook</li>
+              <li>Распродажа</li>
+              <li>Коллекции</li>
+            </ul>
+          </div>
+          </div>
+          </div>
+          </div>
+        <div class="footer-top-contacts">
+          <h4>Контакты</h4>
+          <ul class="contacts">
+            <li><span>Иваново</span> <a href="#">+7 (4932) 59-11-11</a></li>
+            <li><span>Москва</span><a href="#">+7 (4932) 59-11-11</a></li>
+          </ul>
+        </div>
+
+        </div>
+        <div class="footer-bottom-block">
+          <div class="footer-bottom-block__description">
+«Василиса» — Торговая марка компании ООО «ТДЛ Текстиль» <br />
+Все права защищены
+          </div>
+          <div class="footer-bottom-block__icons">
+            <ul>
+            <li>
+              <a href="#"><i class="vk-icon"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="inst-icon"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ok-icon"></i></a>
+            </li>
+            </ul>
+            </div>
+          <div class="footer-bottom-block__address">
+Россия, 153027, г. Иваново, <br />
+ул. П.Большевикова, д. 27 стр. 9
+          </div>
+          </div>
+        </div>
+      </footer>
+      </div>
+
+    </div>
+  </body>
+</html>
