@@ -1,9 +1,4 @@
-// const filterButton = document.getElementById("open-filters");
-// const filters = document.getElementById("filters");
 
-// filterButton.addEventListener("onclick", function () {
-//   filters.hidden = !filters.hidden;
-// });
            changeSize();
            window.onresize = () => changeSize();
            function changeSize() {
