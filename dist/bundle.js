@@ -138,7 +138,7 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// const filterButton = document.getElementById(\"open-filters\");\n// const filters = document.getElementById(\"filters\");\n// filterButton.addEventListener(\"onclick\", function () {\n//   filters.hidden = !filters.hidden;\n// });\nchangeSize();\n\nwindow.onresize = function () {\n  return changeSize();\n};\n\nfunction changeSize() {\n  if (window.matchMedia(\"(max-width: 1023px)\").matches) {\n    document.getElementById(\"filters\").hidden = true;\n  } else {\n    document.getElementById(\"filters\").hidden = false;\n  }\n}\n\ndocument.getElementById(\"open-filters\").onclick = function () {\n  if (document.getElementById(\"filters\").hidden == false) {\n    document.getElementById(\"filters\").hidden = true;\n  } else {\n    document.getElementById(\"filters\").hidden = false;\n  }\n};\n\n//# sourceURL=webpack:///./src/scripts/filterButton.js?");
+eval("changeSize();\n\nwindow.onresize = function () {\n  return changeSize();\n};\n\nfunction changeSize() {\n  if (window.matchMedia(\"(max-width: 1023px)\").matches) {\n    document.getElementById(\"filters\").hidden = true;\n  } else {\n    document.getElementById(\"filters\").hidden = false;\n  }\n}\n\ndocument.getElementById(\"open-filters\").onclick = function () {\n  if (document.getElementById(\"filters\").hidden == false) {\n    document.getElementById(\"filters\").hidden = true;\n  } else {\n    document.getElementById(\"filters\").hidden = false;\n  }\n};\n\n//# sourceURL=webpack:///./src/scripts/filterButton.js?");
 
 /***/ }),
 

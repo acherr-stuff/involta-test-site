@@ -10,12 +10,6 @@ $aside-width: 230px;
   @include laptop {
     min-width: $aside-width;
   }
-  @include tablet {
-  min-width: 100%;
-  }
-  @include phone {
-  min-width: 100%;
-  }
   min-width: $aside-width;
   p {
     font-weight: 300;

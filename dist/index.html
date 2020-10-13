@@ -5,47 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Интернет-магазин</title>
   <link href="bundle.css" rel="stylesheet"></head>
-  <body>
+  <body style="font-family: Circe">
     <div class="container">
       <header class="header">
         <div class="header__logo"></div>
-        <nav class="header__menu">
+        <nav class="header__menu header-menu">
           <ul>
             <li>
-              <a href="#"><i class="lounge-icon"></i>Гостиная</a>
+              <a href="#"><i class="header-menu__icon lounge-icon"></i>Гостиная</a>
             </li>
             <li>
-              <a href="#"><i class="kitchen-icon"></i>Кухня</a>
+              <a href="#"><i class="header-menu__icon kitchen-icon"></i>Кухня</a>
             </li>
             <li>
-              <a href="#"><i class="playroom-icon"></i>Детская</a>
+              <a href="#"><i class="header-menu__icon playroom-icon"></i>Детская</a>
             </li>
             <li>
-              <a href="#"><i class="bathroom-icon"></i>Ванная</a>
+              <a href="#"><i class="header-menu__icon bathroom-icon"></i>Ванная</a>
             </li>
             <li>
-              <a href="#"><i class="bedroom-icon"></i>Спальня</a>
+              <a href="#"><i class="header-menu__icon bedroom-icon"></i>Спальня</a>
             </li>
           </ul>
         </nav>
-        <div class="header__icons">
+        <div class="header__icons header-icons">
           <ul>
             <li>
-              <a href="#"><i class="search-icon"></i></a>
+              <a href="#"><i class="header-icons__icon search-icon"></i></a>
             </li>
             <li>
-              <a href="#"><i class="heart-icon"></i></a>
+              <a href="#"><i class="header-icons__icon heart-icon"></i></a>
             </li>
             <li>
-              <a href="#"><i class="menu-icon"></i></a>
+              <a href="#"><i class="header-icons__icon menu-icon"></i></a>
             </li>
           </ul>
         </div>
       </header>
-      <div class="content">
+      <div class="container__content">
         <aside id="filters">
           <p>Все товары</p>
-          <div class="filter-block">
+          <div class="filters__block filter-block">
             <div class="filter-block__title">
               <h3>Вид ткани</h3>
             </div>
@@ -79,7 +79,7 @@
               </ul>
             </div>
           </div>
-          <div class="filter-block">
+          <div class="filters__block filter-block">
             <div class="filter-block__title">
               <h3>Размер</h3>
             </div>
@@ -107,7 +107,7 @@
               </ul>
             </div>
           </div>
-          <div class="filter-block">
+          <div class="filters__block filter-block">
             <div class="filter-block__title">
               <h3>Дизайн</h3>
             </div>
@@ -136,7 +136,7 @@
               </ul>
             </div>
           </div>
-          <div class="filter-block">
+          <div class="filters__block filter-block">
             <div class="filter-block__title">
               <h3>Тип</h3>
             </div>
@@ -166,7 +166,7 @@
               </ul>
             </div>
           </div>
-          <div class="filter-block color">
+          <div class="filters__block filter-block color">
             <div class="filter-block__title">
               <h3>Цвет</h3>
             </div>
@@ -204,7 +204,7 @@
             </div>
           </div>
         </aside>
-        <main>
+        <main class="content">
           <div class="open-filters"><button id="open-filters">Фильтры</button></div>
           <section class="breadcrumbs">
             <ul>
@@ -214,12 +214,12 @@
               <li class="breadcrumbs__current">Постельное бельё</li>
             </ul>
           </section>          
-          <article class="main-content-description">
-            <div class="main-content-description__title">
+          <article class="content-description__main main-description">
+            <div class="main-description__title">
               <h1>Постельное бельё</h1>
               <div class="icon"><i class="bedroom-icon"></i></div>
             </div>
-            <div class="main-content-description__content">
+            <div class="main-description__content">
               <p>
                 Правомочен микрохроматический интервал традиционно
                 трансформирует комплексный голос, что несомненно приведет нас к
@@ -233,167 +233,208 @@
           </article>
           <section id="list">
             <div class="list-filters">
+              <div class="list-filters-buttons">
               <button>По популярности</button>
               <button>Материал</button>
               <button>Размер</button>
-              <div class="count">1 120 товаров</div>
+              </div>
+            <div class="list-filters-count">1 120 товаров</div>
             </div>
             <div class="list-grid-wrapper">
               <div class="list-grid">
-                <div class="list-grid__item">
-                  <div class="list-grid__item__image">
+                <div class="list-grid__item item">
+                  <div class="item-wrapper">
+                  <div class="list-grid__item__image item-image">
                     <img
                       src="assets/images/image1.png"
                     />
                     <a class="button-like"></a>
                   </div>
-                  <div class="list-grid__item__description">
+                  <div class="list-grid__item__description item-description">
                     <a href="#">КПБ «Мальва»</a>  <span>Рис. 5676</span>
                   </div>
                 </div>
-                <div class="list-grid__item">
-                  <div class="list-grid__item__image">
+                </div>
+                <div class="list-grid__item item">
+                  <div class="item-wrapper">
+                  <div class="list-grid__item__image item-image">
                     <img
-                      src="assets/images/image1.png"
+                      src="assets/images/pic1.jpg"
                     />
+                    <a class="button-like"></a>
                   </div>
-                  <div class="list-grid__item__description">
+                  </div>
+                  <div class="list-grid__item__description item-description">
                      <a href="#">КПБ «Мальва»</a> <span>Рис. 5676</span>
                   </div>
                 </div>
-                <div class="list-grid__item">
-                  <div class="list-grid__item__image">
+                <div class="list-grid__item item">
+                  <div class="item-wrapper">
+                  <div class="list-grid__item__image item-image">
                     <img
                       src="assets/images/image1.png"
                     />
+                    <a class="button-like"></a>
                   </div>
-                  <div class="list-grid__item__description">
-                     <a href="#">КПБ «Мальва»</a> <span>Рис. 5676</span>
+                  <div class="list-grid__item__description item-description">
+                    <a href="#">КПБ «Мальва»</a>  <span>Рис. 5676</span>
                   </div>
                 </div>
-                <div class="list-grid__item">
-                  <div class="list-grid__item__image">
+                </div>
+               <div class="list-grid__item item">
+                  <div class="item-wrapper">
+                  <div class="list-grid__item__image item-image">
                     <img
                       src="assets/images/image1.png"
                     />
+                    <a class="button-like"></a>
                   </div>
-                  <div class="list-grid__item__description">
-                     <a href="#">КПБ «Мальва»</a> <span>Рис. 5676</span>
+                  <div class="list-grid__item__description item-description">
+                    <a href="#">КПБ «Мальва»</a>  <span>Рис. 5676</span>
                   </div>
                 </div>
-                <div class="list-grid__item">
-                  <div class="list-grid__item__image">
+                </div>
+                <div class="list-grid__item item">
+                  <div class="item-wrapper">
+                  <div class="list-grid__item__image item-image">
                     <img
                       src="assets/images/image1.png"
                     />
+                    <a class="button-like"></a>
                   </div>
-                  <div class="list-grid__item__description">
-                     <a href="#">КПБ «Мальва»</a> <span>Рис. 5676</span>
+                  <div class="list-grid__item__description item-description">
+                    <a href="#">КПБ «Мальва»</a>  <span>Рис. 5676</span>
                   </div>
                 </div>
-                <div class="list-grid__item">
-                 <div class="list-grid__item__image">
+                </div>
+                <div class="list-grid__item item">
+                  <div class="item-wrapper">
+                  <div class="list-grid__item__image item-image">
                     <img
                       src="assets/images/image1.png"
                     />
+                    <a class="button-like"></a>
                   </div>
-                  <div class="list-grid__item__description">
-                     <a href="#">КПБ «Мальва»</a> <span>Рис. 5676</span>
+                  <div class="list-grid__item__description item-description">
+                    <a href="#">КПБ «Мальва»</a>  <span>Рис. 5676</span>
                   </div>
                 </div>
-                                <div class="list-grid__item">
-                  <div class="list-grid__item__image">
+                </div>
+                  <div class="list-grid__item item">
+                  <div class="item-wrapper">
+                  <div class="list-grid__item__image item-image">
                     <img
                       src="assets/images/image1.png"
                     />
+                    <a class="button-like"></a>
                   </div>
-                  <div class="list-grid__item__description">
-                     <a href="#">КПБ «Мальва»</a> <span>Рис. 5676</span>
+                  <div class="list-grid__item__description item-description">
+                    <a href="#">КПБ «Мальва»</a>  <span>Рис. 5676</span>
                   </div>
                 </div>
-                <div class="list-grid__item">
-                  <div class="list-grid__item__image">
+                </div>
+                <div class="list-grid__item item">
+                  <div class="item-wrapper">
+                  <div class="list-grid__item__image item-image">
                     <img
                       src="assets/images/image1.png"
                     />
+                    <a class="button-like"></a>
                   </div>
-                  <div class="list-grid__item__description">
-                     <a href="#">КПБ «Мальва»</a> <span>Рис. 5676</span>
+                  <div class="list-grid__item__description item-description">
+                    <a href="#">КПБ «Мальва»</a>  <span>Рис. 5676</span>
                   </div>
                 </div>
-                <div class="list-grid__item">
-                  <div class="list-grid__item__image">
+                </div>
+                <div class="list-grid__item item">
+                  <div class="item-wrapper">
+                  <div class="list-grid__item__image item-image">
                     <img
                       src="assets/images/image1.png"
                     />
+                    <a class="button-like"></a>
                   </div>
-                  <div class="list-grid__item__description">
-                     <a href="#">КПБ «Мальва»</a> <span>Рис. 5676</span>
+                  <div class="list-grid__item__description item-description">
+                    <a href="#">КПБ «Мальва»</a>  <span>Рис. 5676</span>
                   </div>
                 </div>
-                <div class="list-grid__item">
-                  <div class="list-grid__item__image">
+                </div>
+                <div class="list-grid__item item">
+                  <div class="item-wrapper">
+                  <div class="list-grid__item__image item-image">
                     <img
                       src="assets/images/image1.png"
                     />
+                    <a class="button-like"></a>
                   </div>
-                  <div class="list-grid__item__description">
-                     <a href="#">КПБ «Мальва»</a> <span>Рис. 5676</span>
+                  <div class="list-grid__item__description item-description">
+                    <a href="#">КПБ «Мальва»</a>  <span>Рис. 5676</span>
                   </div>
                 </div>
-                <div class="list-grid__item">
-                  <div class="list-grid__item__image">
+                </div>
+                <div class="list-grid__item item">
+                  <div class="item-wrapper">
+                  <div class="list-grid__item__image item-image">
                     <img
                       src="assets/images/image1.png"
                     />
+                    <a class="button-like"></a>
                   </div>
-                  <div class="list-grid__item__description">
-                     <a href="#">КПБ «Мальва»</a> <span>Рис. 5676</span>
+                  <div class="list-grid__item__description item-description">
+                    <a href="#">КПБ «Мальва»</a>  <span>Рис. 5676</span>
                   </div>
                 </div>
-                <div class="list-grid__item"><div class="list-grid__item__image">
+                </div>
+                <div class="list-grid__item item">
+                  <div class="item-wrapper">
+                  <div class="list-grid__item__image item-image">
                     <img
                       src="assets/images/image1.png"
                     />
+                    <a class="button-like"></a>
                   </div>
-                  <div class="list-grid__item__description">
-                    <a href="#">КПБ «Мальва»</a> <span>Рис. 5676</span>
-                  </div></div> 
+                  <div class="list-grid__item__description item-description">
+                    <a href="#">КПБ «Мальва»</a>  <span>Рис. 5676</span>
+                  </div>
+                </div>
+                </div>
                 
                 </div>
                 
               </div>
-             <ul class="list-pagination">
-               <li class="pagination-button-back"> <span><a href="#">Назад</a></span> </li>
-               <li class="pagination-item"><a href="#">1</a> </li>
-               <li class="pagination-item"><span><a href="#">2</a></span> </li>
-               <li class="pagination-item"><span><a href="#">3</a></span></li>
-               <li class="pagination-item"><span><a href="#">4</a></span> </li>
-               <li class="pagination-item"><span><a href="#">5</a></span> </li>
-               <li class="pagination-item"><span><a href="#">6</a></span> </li>
-               <li class="pagination-item"><span><a href="#">7</a></span> </li>
-               <li class="pagination-item"><span><a href="#">8</a></span> </li>
-               <li class="pagination-button-forward"> <span><a href="#">Вперед</a></span>  </li>
-              <li class="pagination-item show-more"><span><a href="#">Показать ещё</a></span> </li>
-                           </ul>
+              <div class="list-pagination">
+             <ul >
+               <li class="list-pagination__item pagination-button-back"> <span><a href="#">Назад</a></span> </li>
+               <li class="list-pagination__item pagination-item"><a href="#">1</a> </li>
+               <li class="list-pagination__item pagination-item"><span><a href="#">2</a></span> </li>
+               <li class="list-pagination__item pagination-item"><span><a href="#">3</a></span></li>
+               <li class="list-pagination__item pagination-item"><span><a href="#">4</a></span> </li>
+               <li class="list-pagination__item pagination-item"><span><a href="#">5</a></span> </li>
+               <li class="list-pagination__item pagination-item"><span><a href="#">6</a></span> </li>
+               <li class="list-pagination__item pagination-item"><span><a href="#">7</a></span> </li>
+               <li class="list-pagination__item pagination-item"><span><a href="#">8</a></span> </li>
+               <li class="list-pagination__item pagination-button-forward"> <span><a href="#">Вперед</a></span>  </li>
+               </ul>
+               <div class="list-pagination__item pagination-item-show-more"><span><a href="#">Показать ещё</a></span> </div>
+               </div>
             </div>
            
-            <article class="content-description">
-              <h3>СЕО-заголовок</h3>
+            <article class="content-description seo">
+              <h3 class="seo__title">СЕО-заголовок</h3>
               <p>Правомочен микрохроматический интервал традиционно трансформирует комплексный голос, что несомненно приведет нас к истине вектор 
 переворачивает аккорд. Скачок функции, как бы это ни казалось парадоксальным, начинает голос наибольшее и наименьшее значения функции 
 вызывает ряд тейлора. Сумма ряда концентрирует миксолидийский нонаккорд, что и требовалось доказать.</p>
             </article>
-            <article class="content-description">
-               <h3>Доставка товара</h3>
+            <article class="content-description shipping">
+               <h3 class="shipping__title">Доставка товара</h3>
               <p>Правомочен микрохроматический интервал традиционно трансформирует комплексный голос, что несомненно приведет нас к истине вектор 
 переворачивает аккорд. Скачок функции, как бы это ни казалось парадоксальным, начинает голос наибольшее и наименьшее значения функции 
 вызывает ряд тейлора. Сумма ряда концентрирует миксолидийский нонаккорд, что и требовалось доказать. Скачок функции, как бы это ни казалось 
 парадоксальным, начинает голос наибольшее и наименьшее значения функции  вызывает ряд тейлора. Сумма ряда концентрирует миксолидийский 
 нонаккорд, что и требовалось доказать.</p>
             </article>
-            <article class="content-description">
-               <h3>Оплата товара</h3>
+            <article class="content-description payment">
+               <h3 class="payment__title">Оплата товара</h3>
               <p>Правомочен микрохроматический интервал традиционно трансформирует комплексный голос, что несомненно приведет нас к истине вектор 
 переворачивает аккорд. Скачок функции, как бы это ни казалось парадоксальным, начинает голос наибольшее и наименьшее значения функции 
 вызывает ряд тейлора. Сумма ряда концентрирует миксолидийский нонаккорд, что и требовалось доказать. Скачок функции, как бы это ни казалось 
@@ -404,55 +445,55 @@
         </main>
             <footer class="footer">
         <div class="footer-top-block">
-          <div class="footer-top-block__logo"><div class="footer-top-block__logo__img"></div></div>
+          <div class="footer-top-block__logo top-block-logo"><div class="top-block-logo__img"></div></div>
           
           <div class="footer-top-menu">
           <div class="columns">
           <div class="column col-4">
-          <div class="footer-top-menu__item">
+          <div class="footer-top-menu__item menu-item">
             <h4>О компании</h4>
-            <ul class="footer-menu xl">
-              <li>О компании</li>
-              <li>Новости</li>
-              <li>Акции и скидки</li>
-              <li>Гарантии</li>
-              <li>Розничная сеть</li>
-              <li>О бренде</li>
-              <li>Отзывы</li>
-              <li>Контакты</li>
+            <ul class="menu-item__paragraph xl">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Акции и скидки</a></li>
+              <li><a href="#">Гарантии</a></li>
+              <li><a href="#">Розничная сеть</a></li>
+              <li><a href="#">О бренде</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Контакты</a></li>
             </ul>
           </div>
           </div> 
 
           <div class="column col-4 ">
-          <div class="footer-top-menu__item">
+          <div class="footer-top-menu__item menu-item">
             <h4>Помощь</h4>
-            <ul class="footer-menu xl">
-              <li>Избранное</li>
-              <li>Личный кабинет</li>
-              <li>FAQ</li>
-              <li>Оптовикам</li>
-              <li>Партнеры</li>
-              <li>Как купить</li>
-              <li>Доставка и оплата</li>
-              <li>Условия покупки</li>
+            <ul class="menu-item__paragraph xl">
+              <li><a href="#">Избранное</a></li>
+              <li><a href="#">Личный кабинет</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Оптовикам</a></li>
+              <li><a href="#">Партнеры</a></li>
+              <li><a href="#">Как купить</a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">Условия покупки</a></li>
             </ul>
           </div>
           </div>
           
           <div class="column col-4">
-          <div class="footer-top-menu__item">
+          <div class="footer-top-menu__item menu-item">
             <h4>Каталог</h4>
-            <ul class="footer-menu xl">
-              <li>Гостиная</li>
-              <li>Кухня</li>
-              <li>Детская</li>
-              <li>Ванная</li>
-              <li>Спальня</li>
-              <li>Новинки</li>
-              <li>Lookbook</li>
-              <li>Распродажа</li>
-              <li>Коллекции</li>
+            <ul class="menu-item__paragraph xl">
+              <li> <a href="#">Гостиная</a> </li>
+              <li> <a href="#">Кухня</a></li>
+              <li> <a href="#">Детская</a> </li>
+              <li><a href="#">Ванная</a></li>
+              <li><a href="#">Спальня</a></li>
+              <li><a href="#">Новинки</a></li>
+              <li><a href="#">Lookbook</a></li>
+              <li><a href="#">Распродажа</a></li>
+              <li><a href="#">Коллекции</a></li>
             </ul>
           </div>
           </div>
@@ -488,6 +529,7 @@
           <div class="footer-bottom-block__address">
 Россия, 153027, г. Иваново, <br />
 ул. П.Большевикова, д. 27 стр. 9
+
           </div>
           </div>
         </div>
